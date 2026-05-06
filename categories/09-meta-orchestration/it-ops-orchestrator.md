@@ -11,7 +11,7 @@ tools:
 - write_file
 - run_shell_command
 - search_file_content
-model: gemini-3-pro-preview
+model: gemini-3.1-pro-preview
 temperature: 0.4
 max_turns: 30
 ---

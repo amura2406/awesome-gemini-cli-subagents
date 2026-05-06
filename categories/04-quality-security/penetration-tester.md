@@ -9,7 +9,7 @@ tools:
 - read_file
 - search_file_content
 - run_shell_command
-model: gemini-3-pro-preview
+model: gemini-3.1-pro-preview
 temperature: 0.15
 max_turns: 25
 ---

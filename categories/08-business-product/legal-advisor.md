@@ -10,8 +10,8 @@ tools:
 - write_file
 - search_file_content
 - web_fetch
-- web_search
-model: gemini-3-pro-preview
+- google_web_search
+model: gemini-3.1-pro-preview
 temperature: 0.5
 max_turns: 20
 ---

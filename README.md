@@ -324,7 +324,7 @@ tools:
   - write_file
   - run_shell_command
   - search_file_content
-model: gemini-3-pro-preview
+model: gemini-3.1-pro-preview
 temperature: 0.1
 max_turns: 20
 ---
@@ -356,8 +356,8 @@ Each subagent includes a `model` field that automatically routes it to the right
 
 | Model                    | When It's Used                                                          | Examples                                                     |
 | ------------------------ | ----------------------------------------------------------------------- | ------------------------------------------------------------ |
-| `gemini-3-pro-preview`   | Deep reasoning — architecture reviews, security audits, financial logic | `security-auditor`, `architect-reviewer`, `fintech-engineer` |
-| `gemini-3-pro-preview`   | Everyday coding — writing, debugging, refactoring                       | `python-pro`, `backend-developer`, `devops-engineer`         |
+| `gemini-3.1-pro-preview`   | Deep reasoning — architecture reviews, security audits, financial logic | `security-auditor`, `architect-reviewer`, `fintech-engineer` |
+| `gemini-3.1-pro-preview`   | Everyday coding — writing, debugging, refactoring                       | `python-pro`, `backend-developer`, `devops-engineer`         |
 | `gemini-3-flash-preview` | Quick tasks — docs, search, dependency checks                           | `documentation-engineer`, `seo-specialist`, `build-engineer` |
 
 You can override any agent's model by editing the `model` field in its frontmatter. Set `model: inherit` to use whatever model your main conversation is using.
@@ -367,9 +367,9 @@ You can override any agent's model by editing the `model` field in its frontmatt
 Each subagent's `tools` field specifies Gemini CLI built-in tools, optimized for their role:
 
 - **Read-only agents** (reviewers, auditors): `read_file, search_file_content` - analyze without modifying
-- **Research agents** (analysts, researchers): `read_file, search_file_content, web_fetch, web_search` - gather information
+- **Research agents** (analysts, researchers): `read_file, search_file_content, web_fetch, google_web_search` - gather information
 - **Code writers** (developers, engineers): `read_file, write_file, run_shell_command, search_file_content` - create and execute
-- **Documentation agents** (writers, documenters): `read_file, write_file, search_file_content, web_fetch, web_search` - document with research
+- **Documentation agents** (writers, documenters): `read_file, write_file, search_file_content, web_fetch, google_web_search` - document with research
 
 Each agent has minimal necessary permissions. You can extend agents by adding MCP servers or external tools to the `tools` field.
 

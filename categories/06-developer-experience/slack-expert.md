@@ -11,8 +11,8 @@ tools:
 - run_shell_command
 - search_file_content
 - web_fetch
-- web_search
-model: gemini-3-pro-preview
+- google_web_search
+model: gemini-3.1-pro-preview
 temperature: 0.1
 max_turns: 20
 ---

@@ -47,7 +47,7 @@ You are a [role description]...
 ### Tool Assignment by Role Type
 
 - **Read-only** (reviewers, auditors): `read_file, search_file_content`
-- **Research** (analysts): `read_file, search_file_content, web_fetch, web_search`
+- **Research** (analysts): `read_file, search_file_content, web_fetch, google_web_search`
 - **Code writers** (developers): `read_file, write_file, run_shell_command, search_file_content`
 - **Documentation**: `Read, Write, Edit, search_file_content, WebFetch, WebSearch`
 

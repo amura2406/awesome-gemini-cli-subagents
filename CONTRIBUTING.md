@@ -39,7 +39,7 @@ tools:
   - write_file
   - run_shell_command
   - search_file_content
-model: gemini-3-pro-preview  # or gemini-3-flash-preview for simple tasks
+model: gemini-3.1-pro-preview  # or gemini-3-flash-preview for simple tasks
 temperature: 0.1  # See temperature guidelines below
 max_turns: 20     # Adjust based on complexity
 ---

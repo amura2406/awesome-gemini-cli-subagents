@@ -8,7 +8,7 @@ tools:
 - read_file
 - search_file_content
 - web_fetch
-- web_search
+- google_web_search
 model: gemini-3-flash-preview
 temperature: 0.45
 max_turns: 20
